@@ -1,8 +1,9 @@
-# Raymond Yeung, Annabel Zhang, Thomas Yu
-# SoftDev
-# K06: Random Occupations With Weighted Probability
-# 2021-09-28
 '''
+Trio of Success: Raymond Yeung, Annabel Zhang, Thomas Yu
+SoftDev
+K06: Random Occupations With Weighted Probability
+2021-09-28
+Summary:
  First we used DictReader to read the csv file and then iterated through it
  into a dictionary. Then we looked at the probabilities of each job by
  iterating through the dictionary and then using a randomly generated
