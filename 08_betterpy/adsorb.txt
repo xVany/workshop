@@ -1,0 +1,21 @@
+Trio of Succ / Daniel Sooknanan, Raymond Yeung, Han Zhang
+K08: Cross Pollination and Virtual Insanity
+SoftDev
+2021-09-30
+
+Questions:
+Is it fine to work in float values or is it better to work in int?
+
+
+
+Comments:
+Can import choices from the random library. This is an easier way to choose a key based off the weight of its respective percentage
+You can also do the weighted calculations by hand
+Can use a try-except block for handling if the “occupations.txt” isn’t there
+DictReader from the csv library is a useful tool for reading a csv file into a Dictionary.
+Could also be done manually, but a lot more work.
+
+Concerns:
+We are very unconcerned!
+
+

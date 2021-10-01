@@ -1,0 +1,9 @@
+Trio of Succ / Daniel Sooknanan, Raymond Yeung, Han Zhang
+K08: Cross Pollination and Virtual Insanity
+SoftDev
+2021-09-30
+
+$ python3 -m venv ~/myherozero - sets up a python virtual environment in the specified directory:
+Useful because when you have different projects that utilize various versions of Python and dependencies, you can keep them separate and organized
+You can switch from virtual environment to virtual environment at any time, so you can change which dependencies / packages you’re working with and what version of Python you’re using on the fly 
+Source: https://docs.python.org/3.4/tutorial/venv.html  
