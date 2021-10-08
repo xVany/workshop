@@ -1,0 +1,16 @@
+Trio Of Success: Raymond Yeung, Thomas Yu, Annabel Zhang
+K12 -- Templates in Flask
+SoftDev
+2021-10-07
+
+Q0: If render_template is removed, there would be nothing to refer to when returning render_template()
+Q1: https://localhost:5000/template/my_foist_template
+Q2: 'model_tmplt.html' refers to the file, foo variable replaces the title with the string.
+
+Expected Behaviors:
+Website title returns fooooo, and the body would return the elements in coll with a newline/break after each element
+
+After Running:
+- Q1's url is different: http://127.0.0.1:5000/my_foist_template
+- my_foist_template doesn't refer to a folder directory
+- 
