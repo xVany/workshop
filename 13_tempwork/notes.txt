@@ -1,0 +1,12 @@
+Notable Notes from last few work submissions:
+-Importing the randomoccupations python program.
+-Concatenating the outputs with HTML markup. (br)
+-
+
+EGOLESS PROGRAMMING:
+-programmer that sees the code they write as an extension of themselves will not look for errors and sometimes even prove the code is correct.
+-human eye will not see what it doesn't want to see; errors
+-programmers should accept that errors will happen and work with others to see the errors.
+-working in groups and staying in the group for a long time
+-avoid personal possessive when refering to programs
+
