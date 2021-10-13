@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> Job Opportunities </title>
+  </head>
+
+  <body>
+    
+    <h3>
+      Need a job? Well, we're here for you! <br>
+      We have links to every type of job you could want. <br>
+      Undecisive? Right below this text is a field you can enter, weighted by the number of jobs in each!
+    </h3> 
+    <hr>
+    <h4> A Job chosen for you: {{ randjob }} </h4>
+    <hr>
+    
+    <table> 
+      <tr> <th> Job Class </th> <th> Percentage </th> </tr>
+      {% for item in dictionary %}
+      <tr> 
+	<td> <a href="https://www.indeed.com/jobs?q={{item[0] | replace(" ","%20")}}">{{ item[0] }}</a> </td> <td> {{ item[1]  }}% </td>
+      </tr>
+      
+      {% endfor %}
+    </table>
+    
+    <footer style="position:fixed;left:0;bottom:0;width:100%;text-align:left;padding:2%;background-color:#e0e0e0">
+      Team Name 404 - Cameron Nelson, Austin Ngan, Raymond Yeung
+    </footer>
+  </body>
+
+</html>
+
