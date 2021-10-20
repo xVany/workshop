@@ -42,7 +42,8 @@ def authenticate():
 
 @app.route("/logout")
 def logout():
-    session.pop("username")
+    if session.get("username"):
+        session.pop("username")
     return redirect("/")
 
 if __name__ == "__main__": #false if this file imported as module
