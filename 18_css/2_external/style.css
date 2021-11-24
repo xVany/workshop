@@ -1,0 +1,45 @@
+  body {
+      background-color: grey
+  }
+  h1 {
+      margin-bottom: 15px;
+      padding: 5px;
+      font-family: arial;
+      background: lightgray;
+      text-align: center;
+      color: white}
+  h3 {
+      margin: 5px;
+      font-family: arial;
+  }
+  ul {
+      margin-left:-35px;
+      list-style-type: none;
+      width:150px;
+      float:left;
+  }
+  a {
+      font-weight: bold;
+      text-decoration: none;
+      color: lightgray;
+      font-family: arial;
+  }
+
+  h2 {
+      font-family: arial;
+      margin-top:-30px;
+      margin-left:175px;
+  }
+  p {
+      margin-left:175px;
+      font-family: arial;
+  }
+
+  footer {
+      margin-top:-20px;
+      padding: 10px;
+      background: dimgray;
+      text-align: right;
+      color: grey;
+      font-family: arial;
+  }
