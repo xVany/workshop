@@ -1,10 +1,13 @@
 Team Name: Sleepy Programmers: Andy Lin, Shadman Rakib, Raymond Yeung
 SoftDev
-K14 -- notes for assignment where website to push out form inputs to another website
+K14 -- Forms using Flask
 2021-10-14
 
 <form action="/auth">: whenever the form is submitted, the first string appended to the URL is /auth
       <input type="text" name="username">: the second string appended to the URL is text with the username given
       <input type="submit" name="sub1">: this is sort of special because this is a button rendered by HTML. This is the third string appended to the URL: submit with sub1
 </form> 
+
 By default, the request type is a GET request for pulling website data. We think sending data is a POST request. Request and app seems to be predefined in flask (because we think it is initalized as blank and values are assigned later on).
+
+In order to do a POST request, the form tag needs to include method="POST" and the route decorator should include POST in the methods array.

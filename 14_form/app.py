@@ -1,61 +1,35 @@
-# Clyde 'Thluffy' Sinclair
+# Team Name: Sleepy Programmers: Andy Lin, Shadman Rakib, Raymond Yeung
 # SoftDev
-# Oct 2021 
+# K14 -- Forms using Flask
+# 2021-10-14
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
 from flask import request           #facilitate form submission
 
-#the conventional way:
-#from flask import Flask, render_template, request
-
 app = Flask(__name__)    #create Flask object
 
 
-'''
-trioTASK:
-~~~~~~~~~~~ BEFORE RUNNING THIS, ~~~~~~~~~~~~~~~~~~
-...read for understanding all of the code below.
-Some will work as written; other sections will not. Can you predict which?
-Devise some simple tests you can run to "take apart this engine," as it were.
-Execute your tests. Process results.
-PROTIP: Insert your own in-line comments wherever they will help your future self and/or current teammates understand what is going on.
-'''
-
-@app.route("/") #, methods=['GET', 'POST'])
+@app.route("/")
 def disp_loginpage():
-    print("\n\n\n")
-    print("***DIAG: this Flask obj ***")
-    print(app)
-    print("***DIAG: request obj ***")
-    print(request)
-    print("***DIAG: request.args ***")
-    print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
-    print("***DIAG: request.headers ***")
-    print(request.headers)
-    return render_template( 'login.html' )
+    return render_template( 'login.html' ) # Render the login template
 
 
-@app.route("/auth") # , methods=['GET', 'POST'])
+@app.route("/auth", methods=['GET', 'POST']) # , methods=['GET', 'POST'])
 def authenticate():
-    print("\n\n\n")
-    print("***DIAG: this Flask obj ***")
-    print(app)
-    print("***DIAG: request obj ***")
-    print(request)
-    print("***DIAG: request.args ***")
-    print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
-    print("***DIAG: request.headers ***")
-    print(request.headers)
-    return render_template('response.html', username=request.args['username'], method=request.method)  #response to a form submission
+    # The requests property contains the values property. The value property contains
+    # data from both requests.args and requests.form. 
+
+    username = request.values['username'] 
+
+    # request.method specifies whether the request in our case specifies if it is a GET or POST request.
+    request_method = request.method
+
+    #response to a form submission. passes down the username and method
+    return render_template('auth.html', username=username, method=request_method)
 
 
-    
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
-    app.debug = True 
+    app.debug = True
     app.run()
